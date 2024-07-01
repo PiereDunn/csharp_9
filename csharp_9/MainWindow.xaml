@@ -1,0 +1,31 @@
+﻿<Window x:Class="csharp_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csharp_9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="splitFrame" HorizontalAlignment="Left"
+                 Margin="50,50,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="180" 
+                 Height="60" 
+                 TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="shiftFrame" HorizontalAlignment="Left" 
+                 Margin="554,50,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="180" 
+                 Height="60" 
+                 TextChanged="TextBox_TextChanged_2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="69,29,0,0" TextWrapping="Wrap" Text="Разделение предложения" VerticalAlignment="Top"/>
+        <Button Content="Разделить" HorizontalAlignment="Left" Margin="110,130,0,0" VerticalAlignment="Top" Click="Button_Split_Click"/>
+        <Button Content="Переставить" HorizontalAlignment="Left" Margin="607,130,0,0" VerticalAlignment="Top" Click="Button_Shift_Click"/>
+        <ListBox x:Name="lbSplitFrame" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="50,170,570,24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="547,29,0,0" TextWrapping="Wrap" Text="Перестановка слов в предложении" VerticalAlignment="Top"/>
+        <Label x:Name="LabelShiftFrame" HorizontalAlignment="Left" Margin="559,167,0,0" VerticalAlignment="Top" Background="#FFC7C7C7" Width="170" Height="245"/>
+    </Grid>
+</Window>
