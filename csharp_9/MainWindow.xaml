@@ -21,11 +21,35 @@
                  Width="180" 
                  Height="60" 
                  TextChanged="TextBox_TextChanged_2"/>
-        <TextBlock HorizontalAlignment="Left" Margin="69,29,0,0" TextWrapping="Wrap" Text="Разделение предложения" VerticalAlignment="Top"/>
-        <Button Content="Разделить" HorizontalAlignment="Left" Margin="110,130,0,0" VerticalAlignment="Top" Click="Button_Split_Click"/>
-        <Button Content="Переставить" HorizontalAlignment="Left" Margin="607,130,0,0" VerticalAlignment="Top" Click="Button_Shift_Click"/>
-        <ListBox x:Name="lbSplitFrame" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="50,170,570,24"/>
-        <TextBlock HorizontalAlignment="Left" Margin="547,29,0,0" TextWrapping="Wrap" Text="Перестановка слов в предложении" VerticalAlignment="Top"/>
-        <Label x:Name="LabelShiftFrame" HorizontalAlignment="Left" Margin="559,167,0,0" VerticalAlignment="Top" Background="#FFC7C7C7" Width="170" Height="245"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="69,29,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Разделение предложения" 
+                   VerticalAlignment="Top"/>
+        <Button Content="Разделить" 
+                HorizontalAlignment="Left" 
+                Margin="110,130,0,0" 
+                VerticalAlignment="Top" 
+                Click="Button_Split_Click"/>
+        <Button Content="Переставить" 
+                HorizontalAlignment="Left" 
+                Margin="607,130,0,0" 
+                VerticalAlignment="Top" 
+                Click="Button_Shift_Click"/>
+        <ListBox x:Name="lbSplitFrame" 
+                 d:ItemsSource="{d:SampleData ItemCount=5}" 
+                 Margin="50,170,570,24"/>
+        <TextBlock HorizontalAlignment="Left" 
+                   Margin="547,29,0,0" 
+                   TextWrapping="Wrap" 
+                   Text="Перестановка слов в предложении" 
+                   VerticalAlignment="Top"/>
+        <Label x:Name="LabelShiftFrame" 
+               HorizontalAlignment="Left" 
+               Margin="559,167,0,0" 
+               VerticalAlignment="Top" 
+               Background="#FFC7C7C7" 
+               Width="170" 
+               Height="245"/>
     </Grid>
 </Window>
